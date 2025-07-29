@@ -45,7 +45,7 @@ def aiprocess(command):
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a virtual assistant named Jarvis. Answer briefly and helpfully."},
+                {"role": "system", "content": "You are a virtual assistant named Jarvis. Answer briefly and helpfully"},
                 {"role": "user", "content": command}
             ]
         )
